@@ -1,0 +1,19 @@
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  width: 600px;
+  margin: 10px;
+  border: 1px solid transparent;
+  box-shadow: 2px 2px 2px 2px #aaaaaa;
+  height: 150px;
+}
+
+.row:active,
+.row:focus {
+  border: 1px solid red;
+}
+
+.selected {
+  border: 1px solid red;
+}
