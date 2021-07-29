@@ -8,14 +8,10 @@
   <h3>{{ product.name }}</h3>
   <span class="product-sku">{{ product.sku }}</span>
   <div class="product-department">
-    <a href="#"> Mens </a>
-    <span>></span>
-
-    <a href="#"> casual </a>
-    <span>></span>
-
-    <a href="#"> shirts </a>
-    <span>></span>
+    <ng-directive *ngFor="let d of product.department; let last = last">
+      <a href="#"> {{ d }} </a>
+      <span>{{ !last ? ">" : "" }}</span>
+    </ng-directive>
   </div>
 </div>
 
